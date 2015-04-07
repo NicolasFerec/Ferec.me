@@ -1,0 +1,21 @@
+body{
+	padding-top: 50px;
+}
+.navbar-brand img{
+	height: 100%;
+}
+#accueil{
+	background-image: url('../images/header.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	color: white;
+	padding: 150px 0;
+}
+#accueil > h1{
+}
+#me{
+	border: 3px solid white;
+	width: 200px;
+	height: 200px;
+}
