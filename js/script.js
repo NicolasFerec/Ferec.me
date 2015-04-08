@@ -10,5 +10,7 @@
 		$(window).scrollTo(0, {
 			duration: 500
 		});
-	})
+	});
+
+	$('#home').parallax("center", 0.5);
 })(jQuery)
