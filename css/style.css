@@ -258,13 +258,15 @@ nav{
 
 
 /******************************************
-<<<<<<< HEAD
 	Contact block styling
 ******************************************/
 .form-control, .btn-default{
 	border-radius: 2px;
 	box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.176);
-=======
+}
+
+
+/******************************************
 	Portfolio block styling
 ******************************************/
 .filters{
@@ -329,5 +331,4 @@ nav{
   .filters li { display: block; margin-bottom: 3px; }
   .portfolio { margin-bottom: 20px; }
   .portfolio .mix { width: 100%; margin-bottom: 12px; margin-right: 0; }
->>>>>>> origin/portfolio
 }
