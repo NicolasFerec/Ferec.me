@@ -1,4 +1,5 @@
 (function($){
+
 	$('#top-nav').onePageNav({
 		currentClass: 'active',
 		changeHash: true,
@@ -13,4 +14,16 @@
 	});
 
 	$('#home').parallax("center", 0.5);
+
+	$('.portfolio').mixItUp({
+	    animation: {
+			duration: 400,
+			effects: 'fade translateZ(-360px) stagger(34ms)',
+			easing: 'ease'
+		},
+		load: {
+			'sort': 'sort:asc'
+		}
+	});
+
 })(jQuery)
