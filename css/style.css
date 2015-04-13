@@ -121,7 +121,7 @@ nav{
 	height: 100%;
 }
 .navbar-default{
-	background-color: rgba(255, 255, 255, 0.9);
+	background-color: rgba(255, 255, 255, 0.85);
 }
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a:focus,a:hover,a:active,.navbar-default .navbar-nav>.active>a,
@@ -254,4 +254,72 @@ nav{
 }
 .timeline > li > .timeline-panel > .timeline-body ul{
 	list-style: disc;
+}
+
+
+/******************************************
+	Portfolio block styling
+******************************************/
+.filters{
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.filters li {
+  display: inline-block;
+  width: auto;
+  padding: 6px 10px;
+  margin-right: 15px;
+  font-size: 1.2em;
+  cursor: pointer;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+.filters li:hover {
+  background: #eeeeee;
+}
+.filters li.active {
+	color: white;
+  	font-weight: 700;
+  	background: #0074bd;
+}
+.portfolio {
+  display: block;
+  width: 100%;
+  padding: 0 12px;
+  margin-bottom: 35px;
+  text-align: center;
+}
+.portfolio .mix {
+  display: none;
+  width: 40%;
+  vertical-align: top;
+  margin-bottom: 25px;
+  margin-right: 20px;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  -moz-box-sizing: border-box;
+}
+.portfolio .mix a {
+  display: inline-block;
+  max-width: 100%;
+  text-decoration: none;
+  background: #fff;
+}
+.portfolio .mix img {
+  padding: 3px;
+  max-width: 100%;
+  -webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.55);
+  -moz-box-shadow: 0 1px 4px rgba(0,0,0,0.55);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.55);
+}
+@media screen and (max-width: 768px) {
+  .filters { padding: 0 18px; }
+  .filters li { display: block; margin-bottom: 3px; }
+  .portfolio { margin-bottom: 20px; }
+  .portfolio .mix { width: 100%; margin-bottom: 12px; margin-right: 0; }
 }
