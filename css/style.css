@@ -255,3 +255,12 @@ nav{
 .timeline > li > .timeline-panel > .timeline-body ul{
 	list-style: disc;
 }
+
+
+/******************************************
+	Contact block styling
+******************************************/
+.form-control, .btn-default{
+	border-radius: 2px;
+	box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.176);
+}
