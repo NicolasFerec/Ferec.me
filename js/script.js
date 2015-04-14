@@ -19,10 +19,10 @@
 	    animation: {
 			duration: 400,
 			effects: 'fade translateZ(-360px) stagger(34ms)',
-			easing: 'ease'
+			easing: 'cubic-bezier(0.6, -0.28, 0.735, 0.045)'
 		},
 		load: {
-			'sort': 'sort:asc'
+			'sort': 'random'
 		}
 	});
 
