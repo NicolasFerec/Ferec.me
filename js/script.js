@@ -26,4 +26,24 @@
 		}
 	});
 
+	$('#contact button[type="submit"]').click(function(e){
+		e.preventDefault();
+		var $form = $(this).parents('form');
+		$.ajax({
+			url: 'mail.php',
+			type: 'POST',
+			data: {
+				'name': $form.find('#formName').val(),
+				'email': $form.find('#formEmail').val(),
+				'message': $form.find('#formMessage').val()
+			},
+			statusCode:{
+				200: function(data){
+					$('body').append(data)
+				}
+			}
+		});
+
+	});
+
 })(jQuery)
