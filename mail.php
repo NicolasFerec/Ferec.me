@@ -1,9 +1,16 @@
 <?php
-
-	$headers = 	'From: ' . $_POST['email'] . "\r\n" .
-			    'X-Mailer: PHP/' . phpversion();
+	var_dump($_POST);
+	$headers = 	'From: ' . $_POST['name'] . ' <' . $_POST['email'] . '>' . "\r\n";
+	$headers .=	'To: Nicolas Ferec <nicolas@ferec.me>' . "\r\n";
+	$headers .=	'Reply-to: ' . $_POST['name'] . '<' . $_POST['email'] . '>' . "\r\n";
+	$headers .= 'X-Mailer: PHP/' . phpversion();
+	echo $headers;
 	$message = htmlspecialchars($_POST['message']);
 
-	mail('nicolas@ferec.me', 'Mail from ferec.me contact form', $message, $headers);
+	if(mail('nicolas@ferec.me', 'Mail from ferec.me contact form', $message, $headers)){
+		echo 'Success';
+	}else{
+		echo 'Error';
+	};
 
 ?>

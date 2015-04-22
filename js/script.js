@@ -26,21 +26,18 @@
 		}
 	});
 
-	$('#contact button[type="submit"]').click(function(e){
-		e.preventDefault();
-		var $form = $(this).parents('form');
+	$('#contact button').click(function(){
 		$.ajax({
 			url: 'mail.php',
 			type: 'POST',
 			data: {
-				'name': $form.find('#formName').val(),
-				'email': $form.find('#formEmail').val(),
-				'message': $form.find('#formMessage').val()
+				name: $('#formName').val(),
+				email: $('#formEmail').val(),
+				message: $('#formMessage').val()
 			},
-			statusCode:{
-				200: function(data){
-					$('body').append(data)
-				}
+			success: function(){
+				$('#contact').find('h3').after('<div class="row" style="display:none"><div class="col-sm-12"><div class="alert alert-success" role="alert">Message envoyé avec succès</div></div></div>');
+				$('#contact').find('.row').first().slideDown();
 			}
 		});
 
